@@ -1,0 +1,7 @@
+<template name="activity">
+  <h1>Activity</h1>
+  <p>Calories: {{#if subscriptionsReady}} {{allCalories}} {{else}} Loading… {{/if}}</p>
+  <p>Carbs: {{#if subscriptionsReady}} {{allCarbs}} {{else}} Loading… {{/if}}</p>
+
+  {{> chart_heartRate}}
+</template>
